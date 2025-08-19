@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>We Asked Our Team What They’re Up To—Here’s the Scoop</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #333; }
+        .question { margin-bottom: 20px; }
+        .answers label { display: block; margin: 5px 0; }
+        #submit-btn { margin-top: 20px; padding: 10px 20px; font-size: 16px; }
+        #result { margin-top: 30px; padding: 15px; border: 1px solid #ccc; background-color: #f9f9f9; }
+    </style>
+</head>
+<body>
+    <h1>We Asked Our Team What They’re Up To—Here’s the Scoop</h1>
+    <p>Today's meeting is about sharing how your work is going. To help facilitate discussion, complete the below BuzzFeed style quiz to determine what kind of question prompts you may be inclined to answer.</p>
+
+    <form id="quiz-form">
+        <div class="question">
+            <p>1. When your team needs input, what’s your natural instinct?</p>
+            <div class="answers">
+                <label><input type="radio" name="q1" value="Thoughtful Reflector"> Share a personal story or challenge to spark reflection</label>
+                <label><input type="radio" name="q1" value="Bold Innovator"> Toss out a bold idea to shake things up</label>
+                <label><input type="radio" name="q1" value="Results Driver"> Suggest a practical next step to keep things moving</label>
+                <label><input type="radio" name="q1" value="Team Energizer"> Build on someone else’s comment to strengthen connection</label>
+                <label><input type="radio" name="q1" value="Data Dive"> Offer a data point or feedback to guide the conversation</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>2. Pick a work mascot:</p>
+            <div class="answers">
+                <label><input type="radio" name="q2" value="Thoughtful Reflector"> 🐢 Thoughtful Turtle</label>
+                <label><input type="radio" name="q2" value="Team Energizer"> 🐶 Loyal Golden Retriever</label>
+                <label><input type="radio" name="q2" value="Data Dive"> 🦉 Wise Owl</label>
+                <label><input type="radio" name="q2" value="Bold Innovator"> 🦄 Idea Unicorn</label>
+                <label><input type="radio" name="q2" value="Results Driver"> 🐝 Busy Bee</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>3. What’s your ideal way to start the day?</p>
+            <div class="answers">
+                <label><input type="radio" name="q3" value="Data Dive"> Reviewing yesterday’s metrics or feedback</label>
+                <label><input type="radio" name="q3" value="Team Energizer"> Sending a “good morning” message to the team</label>
+                <label><input type="radio" name="q3" value="Thoughtful Reflector"> Journaling or reflecting on yesterday</label>
+                <label><input type="radio" name="q3" value="Bold Innovator"> Trying a new productivity hack</label>
+                <label><input type="radio" name="q3" value="Results Driver"> Diving straight into your to-do list</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>4. What motivates you most at work?</p>
+            <div class="answers">
+                <label><input type="radio" name="q4" value="Data Dive"> Seeing measurable progress</label>
+                <label><input type="radio" name="q4" value="Results Driver"> Getting things done and making an impact</label>
+                <label><input type="radio" name="q4" value="Bold Innovator"> The thrill of trying something new</label>
+                <label><input type="radio" name="q4" value="Team Energizer"> Feeling connected to my team</label>
+                <label><input type="radio" name="q4" value="Thoughtful Reflector"> Personal growth and self-awareness</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>5. You’re stuck on a project. What do you do first?</p>
+            <div class="answers">
+                <label><input type="radio" name="q5" value="Thoughtful Reflector"> Reflect on what’s blocking you</label>
+                <label><input type="radio" name="q5" value="Results Driver"> Break the task into smaller steps and power through</label>
+                <label><input type="radio" name="q5" value="Bold Innovator"> Brainstorm a new approach</label>
+                <label><input type="radio" name="q5" value="Team Energizer"> Ask a teammate for support</label>
+                <label><input type="radio" name="q5" value="Data Dive"> Look at past feedback or data</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>6. What kind of slide would you secretly love to present?</p>
+            <div class="answers">
+                <label><input type="radio" name="q6" value="Thoughtful Reflector"> One about a personal insight or challenge</label>
+                <label><input type="radio" name="q6" value="Data Dive"> One that shows how feedback changed something</label>
+                <label><input type="radio" name="q6" value="Results Driver"> One that shows progress or results</label>
+                <label><input type="radio" name="q6" value="Team Energizer"> One that celebrates a joyful team moment</label>
+                <label><input type="radio" name="q6" value="Bold Innovator"> One with a wild idea or experiment</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>7. Pick a meeting snack:</p>
+            <div class="answers">
+                <label><input type="radio" name="q7" value="Thoughtful Reflector"> Herbal tea and a granola bar</label>
+                <label><input type="radio" name="q7" value="Results Driver"> Energy drink and trail mix</label>
+                <label><input type="radio" name="q7" value="Bold Innovator"> Spicy chips and kombucha</label>
+                <label><input type="radio" name="q7" value="Data Dive"> Black coffee and a protein bar</label>
+                <label><input type="radio" name="q7" value="Team Energizer"> Cookies to share with the team</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>8. You’ve been given a magic wand to instantly improve your work. What do you fix first?</p>
+            <div class="answers">
+                <label><input type="radio" name="q8" value="Thoughtful Reflector"> My ability to reflect and grow from challenges</label>
+                <label><input type="radio" name="q8" value="Results Driver"> My focus and follow-through on tasks</label>
+                <label><input type="radio" name="q8" value="Bold Innovator"> How I experiment with new tools and ideas</label>
+                <label><input type="radio" name="q8" value="Data Dive"> How I gather and apply feedback</label>
+                <label><input type="radio" name="q8" value="Team Energizer"> My connection with teammates and collaborators</label>
+            </div>
+        </div>
+
+        <button type="button" id="submit-btn" onclick="calculateResult()">Submit</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        function calculateResult() {
+            const form = document.getElementById('quiz-form');
+            const formData = new FormData(form);
+            const counts = {};
+
+            for (let [key, value] of formData.entries()) {
+                counts[value] = (counts[value] || 0) + 1;
+            }
+
+            let topCategory = null;
+            let maxCount = 0;
+            for (let category in counts) {
+                if (counts[category] > maxCount) {
+                    maxCount = counts[category];
+                    topCategory = category;
+                }
+            }
+
+            displayResult(topCategory);
+        }
+
+        function displayResult(category) {
+            const results = {
+                "Thoughtful Reflector": {
+                    description: "You bring depth, insight, and emotional awareness to the team—basically, you're the person who turns “just a meeting” into a moment of meaning. You don’t just check boxes; you ask the big questions: What did we learn? How did this impact the learner? Should we have used fewer slides and more soul?
+
+You’re the one who quietly observes, then drops a truth bomb that makes everyone pause and say, “Huh… good point.” You thrive in conversations that go beyond surface-level updates and dig into the why behind the work. You’re likely to gravitate toward prompts that invite reflection, explore challenges, or uncover lessons learned.
+
+In short, you’re the team’s unofficial wisdom keeper—and we’re better for it..",
+                    slides: [
+                        {title: "What’s Blocking You", prompt: "What’s one thing slowing you down."},
+                        {title: "Joy Sparks", prompt: "One fun, funny, or feel-good moment from a recent project or process."},
+                        {title: "Learning Wishlist", prompt: "One thing you want to learn or improve."}
+                    ]
+                },
+                "Results Driver": {
+                    description: "You keep the team moving forward and focused on outcomes.",
+                    slides: [
+                        {title: "What’s Everyone Working On", prompt: "Share a couple of sentences about a project you’re excited to be working on and why."},
+                        {title: "Try Something New", prompt: "A new tool, method, or workflow you’re testing out (or want to test out)."},
+                        {title: "What’s Blocking You", prompt: "What’s one thing slowing you down."}
+                    ]
+                },
+                "Bold Innovator": {
+                    description: "You thrive on fresh ideas and love testing new approaches.",
+                    slides: [
+                        {title: "Try Something New", prompt: "A new tool, method, or workflow you’re testing out (or want to test out)."},
+                        {title: "Idea Lab", prompt: "Pitch an idea or approach to learning that you want to try—even if it’s outlandish or experimental."},
+                        {title: "Learning Wishlist", prompt: "One thing you want to learn or improve."}
+                    ]
+                },
+                "Team Energizer": {
+                    description: "You spark joy and build bridges across the team.",
+                    slides: [
+                        {title: "Joy Sparks", prompt: "One fun, funny, or feel-good moment from a recent project or process."},
+                        {title: "What’s Everyone Working On", prompt: "Share a couple of sentences about a project you’re excited to be working on and why."},
+                        {title: "Feedback Loop", prompt: "Some recent feedback you received and how it’s being used."}
+                    ]
+                },
+                "Data Dive": {
+                    description: "You bring clarity through feedback, metrics, and analysis.",
+                    slides: [
+                        {title: "Feedback Loop", prompt: "Share a piece of feedback you or the team received and how it’s being used to improve something."},
+                        {title: "What’s Everyone Working On", prompt: "Share a quick update with a data point or insight."},
+                        {title: "What’s Blocking You", prompt: "Share a blocker and any patterns or trends you’ve noticed."}
+                    ]
+                }
+            };
+
+            const result = results[category];
+            const container = document.getElementById("result");
+            container.innerHTML = `<h2>Your Quiz Result</h2><p><strong>${category}</strong>: ${result.description}</p>`;
+            container.innerHTML += "<h3>Slides You'll Share On:</h3><ul>";
+            result.slides.forEach(slide => {
+                container.innerHTML += `<li><strong>${slide.title}</strong>: ${slide.prompt}</li>`;
+            });
+            container.innerHTML += "</ul>";
+        }
+    </script>
+</body>
+</html>
